@@ -1,0 +1,11 @@
+version: '3'
+services:
+  notebook:
+    build:
+      context: ./app/jupyter-notebook-docker
+    ports:
+      - "1234:8888"
+    volumes:
+      - ./:/home/jovyan/work
+    working_dir: /home/jovyan/work
+  
