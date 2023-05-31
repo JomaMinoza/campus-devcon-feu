@@ -1,5 +1,6 @@
 FROM jupyter/scipy-notebook
 
+# Modify this with your own OPENAI API KEY
 ENV OPENAI_API_KEY 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
 
 RUN conda install --quiet --yes \
